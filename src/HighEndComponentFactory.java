@@ -10,11 +10,16 @@ public class HighEndComponentFactory implements ComponentFactory{
     public ComponentBasic createSSD() {
         return new ComponentBasic("High-end SSD", 175.0);
     }
+
+    public ComponentBasic createGPU() {
+        return new ComponentBasic("Low-end GPU", 1650.0);
+    }
     public CompositeComponent createMotherboard() {
         CompositeComponent motherboard = new CompositeComponent("Advanced Motherboard", 250.0);
         motherboard.addComponent(createCPU());
         motherboard.addComponent(createRAM());
         motherboard.addComponent(createSSD());
+        motherboard.addComponent(createGPU());
         return motherboard;
     }
 

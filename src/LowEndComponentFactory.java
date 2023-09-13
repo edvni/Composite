@@ -10,11 +10,15 @@ public class LowEndComponentFactory implements ComponentFactory{
     public ComponentBasic createSSD() {
         return new ComponentBasic("Low-end SSD", 75.0);
     }
+    public ComponentBasic createGPU() {
+        return new ComponentBasic("Low-end GPU", 650.0);
+    }
     public CompositeComponent createMotherboard() {
         CompositeComponent motherboard = new CompositeComponent("Basic Motherboard", 50.0);
         motherboard.addComponent(createCPU());
         motherboard.addComponent(createRAM());
         motherboard.addComponent(createSSD());
+        motherboard.addComponent(createGPU());
         return motherboard;
     }
 
