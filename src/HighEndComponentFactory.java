@@ -12,7 +12,7 @@ public class HighEndComponentFactory implements ComponentFactory{
     }
 
     public ComponentBasic createGPU() {
-        return new ComponentBasic("Low-end GPU", 1650.0);
+        return new ComponentBasic("High-end GPU", 1650.0);
     }
     public CompositeComponent createMotherboard() {
         CompositeComponent motherboard = new CompositeComponent("Advanced Motherboard", 250.0);
