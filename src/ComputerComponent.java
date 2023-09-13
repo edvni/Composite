@@ -1,0 +1,3 @@
+interface ComputerComponent {
+    double getPrice();
+}
